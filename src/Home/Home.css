@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Filsonpro", sans-serif;
+}
+body {
+  overflow: scroll;
+  font-family: "Filsonpro", sans-serif;
+}
+
+.main-container {
+  max-width: 100%;
+  width: 90vw;
+  height: auto;
+  margin: 0 auto;
+  padding: 5px 0px 5px 0px;
+}
+
+/* navbar part */
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navBar button {
+  text-align: center;
+  margin: 0px 0px 15px 10px;
+  background-color: #9189a4;
+  border-radius: 20px;
+  width: 150px;
+  height: 38px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 12px;
+  align-items: center;
+  letter-spacing: 2px;
+
+  color: #ffffff;
+  border: 0;
+  text-shadow: none !important;
+}
+
+.navBar button:hover {
+  background-color: #000;
+  border: 1px solid #fff;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+/* hero section */
+.hero {
+  text-align: center;
+  font-family: "Filsonpro", sans-serif !important;
+}
+
+.hero p {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 24px;
+  align-items: center;
+  letter-spacing: 2px;
+  margin: 10px 0px auto;
+}
+
+.buttonDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 340px;
+  margin: 0 auto;
+}
+
+.hero button {
+  text-align: center;
+  margin: 0px;
+  background-color: #9189a4;
+  border-radius: 20px;
+  width: 150px;
+  height: 38px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 12px;
+  align-items: center;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  color: #ffffff;
+  border: 0;
+  text-shadow: none !important;
+}
+
+.hero button:hover {
+  background-color: #000;
+  border: 1px solid #fff;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.hero i {
+  margin-right: 5px;
+}
+
+.text-block-5 {
+  font-family: "Filsonpro", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 24px;
+  align-items: center;
+  letter-spacing: 2px;
+
+  color: #ffffff;
+}
+
+/* main section */
+
+.main {
+  margin: 0 auto;
+  object-fit: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 12px;
+}
+.main img {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+}
+
+/* footer section */
+
+.footer {
+  max-height: 65px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  clear: both;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer .footerPart2 i {
+  padding: 10px;
+  margin: 7px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.footerPart2 a i:hover {
+  background-color: white;
+  color: #000;
+  transition: all 0.2s ease-in-out;
+}
+
+.footerPart1 {
+  display: flex;
+  max-height: 50px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 140px;
+}
+
+.footerPart1 a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 12px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footerPart2 {
+  margin: 10px auto !important;
+  width: 380px;
+}
+
+@media (max-width: 480px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 480px;
+    text-align: center !important;
+    margin-left: -3%;
+    margin-bottom: 20px;
+  }
+  .main-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .navbar button {
+    margin: 0px !important;
+  }
+
+  .navbar {
+    padding: 0;
+  }
+
+  .text-block-5 {
+    font-size: 100%;
+    margin-top: 10px;
+  }
+
+  .hero p {
+    margin-top: 10px;
+    font-size: 65%;
+  }
+
+  #logoText {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .main-container {
+    width: 90vw;
+    padding: 20px 10px 10px 10px;
+  }
+
+  .navbar button {
+    margin: 0px !important;
+  }
+
+  .navbar {
+    padding: 0;
+  }
+
+  .text-block-5 {
+    font-size: 100%;
+    margin-top: 10px;
+  }
+
+  .hero p {
+    margin-top: 10px;
+    font-size: 65%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 766px) {
+  .text-block-5 {
+    font-size: 100%;
+  }
+}
