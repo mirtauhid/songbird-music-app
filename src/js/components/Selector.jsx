@@ -6,7 +6,7 @@ import {
   isBufferingState,
   playerVolumeState,
   pomodoroShownState,
-  stationsSelectorOpenState,
+  stationsSelectorOpenState
 } from "../recoilState";
 import stations from "../stations";
 import getCloudfrontGifUrl from "../utils/getCloudfrontGifUrl";
@@ -37,7 +37,7 @@ function Selector({ currentStationId, setCurrentStationId, isPlaying }) {
       return (
         <span>
           <span className="red" style={{ display: "inline" }}>
-            click to change >{" "}
+            click to change{" "}
           </span>
           {currentStation.name}
         </span>
